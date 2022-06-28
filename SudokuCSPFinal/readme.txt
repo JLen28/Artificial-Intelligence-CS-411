@@ -1,7 +1,36 @@
-within this program there exists a total of 3 functions not including main. 
+This program was created on my own in my spring 2022 semester at UIC as a project for one the Artifical Intelligence programs assigned to me.
+--------------------------------------------------------------------------------
+Inputs must follow the form of that shown in input.txt, it will look like this.
+
+|5|||4||6|||1|
+||4|||1||||2|
+||6|||||4|9|5|
+||||||8||||
+|||2||5|||||
+|||||4||1|7|9|
+||||||||3|4|
+|||9||6|4||1|8|
+|||4||8|2|||7|
+
+Values must be placed between the bars with no spaces in between and must be given in the form of a ".txt" file for the program to function properly.
+
+For example, a fully completed puzzle will look like this. The solution will be written to a text file of its own and save itself as "output.txt"
+
+|5|9|7|4|2|6|3|8|1|
+|3|4|8|5|1|9|7|6|2|
+|2|6|1|8|3|7|4|9|5|
+|4|1|3|7|9|8|5|2|6|
+|9|7|2|6|5|1|8|4|3|
+|6|8|5|2|4|3|1|7|9|
+|8|2|6|1|7|5|9|3|4|
+|7|5|9|3|6|4|2|1|8|
+|1|3|4|9|8|2|6|5|7|
+
+
 
 *** On line 203 in main is the line of code that decides which file to read from, by default, it is set to input.txt which is provided for example purposes ***
 
+within this program there exists a total of 3 functions not including main. 
 --------------------------------------------------------------------------------
 First is the function conCheck, this function is responsible for doing a consistency check each time a value is trying to be placed in the backtrack search. It will start by searching all the relevant rows and columns that could violate the conistency check, after that it will check the relevant 3x3 sub-grid depending on the position we're trying to place a value in. Returning 0 to indicate to the backtrack search that some backtracking must be done, or that no solution can be found depending on when the check fails. Or, returning 1 if each check passes. This is the only function that is used for consistency checking and is called by the backtrack search function each time a value can potentially be placed in the sudoku board.
 --------------------------------------------------------------------------------
