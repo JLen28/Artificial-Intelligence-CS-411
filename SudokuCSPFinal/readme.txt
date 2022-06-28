@@ -1,4 +1,4 @@
-This program was created on my own in my spring 2022 semester at UIC as a project for one the Artifical Intelligence programs assigned to me.
+This program was created during the spring 2022 semester at UIC for my Artificial Intelligence course (CS 411).
 --------------------------------------------------------------------------------
 Inputs must follow the form of that shown in input.txt, it will look like this.
 
